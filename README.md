@@ -1,2 +1,8 @@
 # debug-mongoose-aggregate
-Simple aggregate debugger for mongoose
+
+
+## Usage:
+
+```
+await debugAggregate(UserModel, aggregatePipeline);
+```
