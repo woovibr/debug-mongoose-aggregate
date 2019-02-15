@@ -5,7 +5,7 @@ const debug = (message = '', data) => {
 };
 
 const debugAggregate = async (model, pipeline) => {
-  for (const i=1; i<pipeline.length; i++) {
+  for (let i=1; i<pipeline.length; i++) {
     const p = pipeline.slice(0, i);
 
     const result = await model.aggregate(p);
